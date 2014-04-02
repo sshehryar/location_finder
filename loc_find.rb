@@ -14,8 +14,8 @@ require 'geocoder'
 addr = remote_ip.to_s
 
 loc = Geocoder.search(addr)
-
-puts "#{loc}"
+disp = loc[0].address
+puts "Location is: #{disp}"
 
 #coord = Geocoder.coordinates(addr)
 #cntry = loc.country_name
